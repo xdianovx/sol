@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Колесо фортуны</title>
+</head>
+<body>
+<main class="main">
+  <div class="overlay"></div>
+  <div class="popup popup__second">
+    <img
+      src="./img/coins.png"
+      alt="Coins"
+      class="popup__coins">
+    <div class="popup__header">Регистрация</div>
+    <div class="popup__wrap">
+      <div class="popup__body">
+        <div class="popup__title">Ваш выигрыш ждёт вас!</div>
+        <div class="popup__text">Зарегистрируйтесь, сделайте<br>первый депозит и получите<br>до <b>150% на
+          депозит</b> и<br><b>до 50 бесплатных<br>вращений</b></div>
+
+        <form method="post" action="#">
+
+          <div class="popup__input">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              data-test="wof_email_field"
+            >
+            <label class="error">E-mail имеет неверное значение</label>
+          </div>
+
+          <div class="popup__input">
+            <input
+              type="password"
+              name="password"
+              placeholder="Пароль"
+              data-test="wof_password_field"
+            >
+            <label class="error">Введите пароль</label>
+          </div>
+
+          <button
+            class="popup__btn"
+            type="submit"
+          >
+            Зарегистрироваться
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup__first">
+    <img
+      src="./img/coins.png"
+      alt="Coins"
+      class="popup__coins">
+    <div class="popup__header">Поздравляем!</div>
+    <div class="popup__wrap">
+      <div class="popup__body">
+        <div class="popup__text">Вы выиграли<br>до <b>150%</b> на ваш<br>первый депозит</div>
+
+        <p>У вас есть еще <br>
+          одна попытка</p>
+
+        <button
+          class="popup__btn onemore__btn"
+          type="submit"
+        >
+          Играть еще
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="main__wrap">
+      <img src="./img/pointer.png" alt="Pointer" class="pointer">
+      <img src="./img/wheel.png" alt="wheel" class="wheel">
+
+      <div class="btn">
+        <img src="./img/btn.png" alt="Spin">
+      </div>
+
+      <div class="attempts">2</div>
+
+      <div class="copyright">
+        <img src="./img/copyrights.png" alt="Copyrights">
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
